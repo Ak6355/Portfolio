@@ -1,98 +1,135 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.Hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #efefef;
 }
 
-.first_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  background: transparent;
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(120, 120, 120); */
 }
 
-.linkedin {
-  font-size: 24px;
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
 }
 
-.linkedin a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px; /* Adjust spacing between logo and LinkedIn icon */
+.logo img{
+    border-radius: 50%;
 }
 
-.linkedin a:hover {
-  color: #0077b5; /* Change color on hover to LinkedIn blue */
+.logo span{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 23px;
+    font-weight: 800;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+nav ul{
+    margin-right:50px;
 }
 
-.navbar-logo {
-  display: flex;
-  align-items: center;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+    font-weight: bold;
 }
 
-.navbar-logo img {
-  margin-right: 20px;
-  border-radius: 50%;
+nav ul li a:hover{
+    color: red;
 }
 
-.jumbotron {
-  background-color: #2881df;
-  color: #ebebeb;
-  padding: 100px 0;
-  text-align: center;
+.social-icon{
+    height: 10px;
+    width: 10px;
+    font-size:25px;
+    margin: 10px;
 }
 
-.about-section {
-  background-color: #f8f9fa;
-  padding: 50px 0;
+.social-icon :hover{
+    color: rgb(0, 106, 255);
 }
 
-.skills-section {
-  background-color: #3c6c72;
-  padding: 50px 0;
-  padding-bottom: 100px;
+.detail{
+    margin-left: 8%;
+    margin-top: 13%;
 }
 
-.skills-section ul {
-  list-style: none;
-  padding: 0;
-  font-size: 17px;
+.detail h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
 }
 
-.skills-section ul li {
-  margin-bottom: 10px;
+.detail span{
+    color: orange;
 }
 
-.footer {
-  background-color: #333333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  /* position: fixed; */
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.detail p{
+    color: #555;
+    line-height: 23px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.heart {
-  color: #FF69B4;
+.detail a{
+    background: #212121;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
 }
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.shape{
+    height: 40%;
+    width: 140%;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .batman{
+    left: 45%;
+}
+
